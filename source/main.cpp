@@ -22,7 +22,7 @@ int main(void)
 	{
 		spi.write( write_data, read_data, sizeof( write_data ) );
 
-		for ( int i = 0; i < sizeof( read_data ); i++ )
+		for ( int i = 0; i < (int)sizeof( read_data ); i++ )
 			PRINTF( " 0x%02X", read_data[ i ] );
 
 		PRINTF( "\r\n" );

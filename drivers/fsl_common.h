@@ -6,8 +6,10 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 
-#ifndef FSL_COMMON_H_
-#define FSL_COMMON_H_
+#ifndef _FSL_COMMON_H_
+#define _FSL_COMMON_H_
+
+#define	SDK_DELAY_USE_DWT
 
 #include <assert.h>
 #include <stdbool.h>
@@ -189,7 +191,7 @@ enum _status_groups
     kStatusGroup_LOG            = 154, /*!< Group number for LOG status codes. */
     kStatusGroup_I3CBUS         = 155, /*!< Group number for I3CBUS status codes. */
     kStatusGroup_QSCI           = 156, /*!< Group number for QSCI status codes. */
-    kStatusGroup_ELEMU          = 157, /*!< Group number for ELEMU status codes. */
+    kStatusGroup_SNT            = 157, /*!< Group number for SNT status codes. */
     kStatusGroup_QUEUEDSPI      = 158, /*!< Group number for QSPI status codes. */
     kStatusGroup_POWER_MANAGER  = 159, /*!< Group number for POWER_MANAGER status codes. */
     kStatusGroup_IPED           = 160, /*!< Group number for IPED status codes. */
@@ -200,6 +202,7 @@ enum _status_groups
     kStatusGroup_BMA            = 165, /*!< Group number for BMA status codes. */
     kStatusGroup_NETC           = 166, /*!< Group number for NETC status codes. */
     kStatusGroup_ELE            = 167, /*!< Group number for ELE status codes. */
+    kStatusGroup_GLIKEY         = 168, /*!< Group number for GLIKEY status codes. */
 };
 
 /*! \public
@@ -318,4 +321,4 @@ void SDK_DelayAtLeastUs(uint32_t delayTime_us, uint32_t coreClock_Hz);
 #include "fsl_common_arm.h"
 #endif
 
-#endif /* FSL_COMMON_H_ */
+#endif /* _FSL_COMMON_H_ */

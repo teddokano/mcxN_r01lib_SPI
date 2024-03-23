@@ -8,10 +8,13 @@
 #include	"r01lib.h"
 r01lib_start;	/* *** place this word before making instance of r01lib classes *** */
 
-SPI			spi( 1000000, 0 );	//	SCK frequency, mode
+SPI			spi( D11, D12, D13, D10 );	//	MOSI, MISO, SCLK, CS
 
 int main(void)
 {
+	spi.frequency( 2000000 );
+	spi.mode( 3 );
+
 	uint8_t	write_data[ 8 ]	= { 0x00, 0x01, 0x02, 0x03, 0xFF, 0xFE, 0xFD, 0xFC };
 	uint8_t	read_data[ 8  ]	= { 0x00 };
 

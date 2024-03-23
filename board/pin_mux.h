@@ -241,24 +241,6 @@ void BOARD_InitBootPins(void);
 #define BOARD_INITDEBUG_UARTPINS_ARD_D9_PIN_MASK (1U << 10U)      /*!<@brief PORT pin mask */
                                                                   /* @} */
 
-/*! @name PORT4_0 (coord P1), ARD_D18
-  @{ */
-
-/* Symbols to be used with PORT driver */
-#define BOARD_INITDEBUG_UARTPINS_ARD_D18_PORT PORT4               /*!<@brief PORT peripheral base pointer */
-#define BOARD_INITDEBUG_UARTPINS_ARD_D18_PIN 0U                   /*!<@brief PORT pin number */
-#define BOARD_INITDEBUG_UARTPINS_ARD_D18_PIN_MASK (1U << 0U)      /*!<@brief PORT pin mask */
-                                                                  /* @} */
-
-/*! @name PORT4_1 (coord P2), ARD_D19
-  @{ */
-
-/* Symbols to be used with PORT driver */
-#define BOARD_INITDEBUG_UARTPINS_ARD_D19_PORT PORT4               /*!<@brief PORT peripheral base pointer */
-#define BOARD_INITDEBUG_UARTPINS_ARD_D19_PIN 1U                   /*!<@brief PORT pin number */
-#define BOARD_INITDEBUG_UARTPINS_ARD_D19_PIN_MASK (1U << 1U)      /*!<@brief PORT pin mask */
-                                                                  /* @} */
-
 /*! @name PORT0_6 (coord C14), P0_6/J23[7]/SW3[3]/SW3[4]
   @{ */
 
@@ -276,6 +258,11 @@ void BOARD_InitBootPins(void);
 /*! @name PORT0_27 (coord E10), ARD_D10
   @{ */
 
+/* Symbols to be used with GPIO driver */
+#define BOARD_INITDEBUG_UARTPINS_ARD_D10_GPIO GPIO0                /*!<@brief GPIO peripheral base pointer */
+#define BOARD_INITDEBUG_UARTPINS_ARD_D10_GPIO_PIN 27U              /*!<@brief GPIO pin number */
+#define BOARD_INITDEBUG_UARTPINS_ARD_D10_GPIO_PIN_MASK (1U << 27U) /*!<@brief GPIO pin mask */
+
 /* Symbols to be used with PORT driver */
 #define BOARD_INITDEBUG_UARTPINS_ARD_D10_PORT PORT0                /*!<@brief PORT peripheral base pointer */
 #define BOARD_INITDEBUG_UARTPINS_ARD_D10_PIN 27U                   /*!<@brief PORT pin number */
@@ -284,6 +271,11 @@ void BOARD_InitBootPins(void);
 
 /*! @name PORT0_24 (coord B6), ARD_D11
   @{ */
+
+/* Symbols to be used with GPIO driver */
+#define BOARD_INITDEBUG_UARTPINS_ARD_D11_GPIO GPIO0                /*!<@brief GPIO peripheral base pointer */
+#define BOARD_INITDEBUG_UARTPINS_ARD_D11_GPIO_PIN 24U              /*!<@brief GPIO pin number */
+#define BOARD_INITDEBUG_UARTPINS_ARD_D11_GPIO_PIN_MASK (1U << 24U) /*!<@brief GPIO pin mask */
 
 /* Symbols to be used with PORT driver */
 #define BOARD_INITDEBUG_UARTPINS_ARD_D11_PORT PORT0                /*!<@brief PORT peripheral base pointer */
@@ -294,6 +286,11 @@ void BOARD_InitBootPins(void);
 /*! @name PORT0_26 (coord F10), ARD_D12
   @{ */
 
+/* Symbols to be used with GPIO driver */
+#define BOARD_INITDEBUG_UARTPINS_ARD_D12_GPIO GPIO0                /*!<@brief GPIO peripheral base pointer */
+#define BOARD_INITDEBUG_UARTPINS_ARD_D12_GPIO_PIN 26U              /*!<@brief GPIO pin number */
+#define BOARD_INITDEBUG_UARTPINS_ARD_D12_GPIO_PIN_MASK (1U << 26U) /*!<@brief GPIO pin mask */
+
 /* Symbols to be used with PORT driver */
 #define BOARD_INITDEBUG_UARTPINS_ARD_D12_PORT PORT0                /*!<@brief PORT peripheral base pointer */
 #define BOARD_INITDEBUG_UARTPINS_ARD_D12_PIN 26U                   /*!<@brief PORT pin number */
@@ -303,11 +300,44 @@ void BOARD_InitBootPins(void);
 /*! @name PORT0_25 (coord A6), ARD_D13
   @{ */
 
+/* Symbols to be used with GPIO driver */
+#define BOARD_INITDEBUG_UARTPINS_ARD_D13_GPIO GPIO0                /*!<@brief GPIO peripheral base pointer */
+#define BOARD_INITDEBUG_UARTPINS_ARD_D13_GPIO_PIN 25U              /*!<@brief GPIO pin number */
+#define BOARD_INITDEBUG_UARTPINS_ARD_D13_GPIO_PIN_MASK (1U << 25U) /*!<@brief GPIO pin mask */
+
 /* Symbols to be used with PORT driver */
 #define BOARD_INITDEBUG_UARTPINS_ARD_D13_PORT PORT0                /*!<@brief PORT peripheral base pointer */
 #define BOARD_INITDEBUG_UARTPINS_ARD_D13_PIN 25U                   /*!<@brief PORT pin number */
 #define BOARD_INITDEBUG_UARTPINS_ARD_D13_PIN_MASK (1U << 25U)      /*!<@brief PORT pin mask */
                                                                    /* @} */
+
+/*! @name PORT4_0 (coord P1), ARD_D18
+  @{ */
+
+/* Symbols to be used with GPIO driver */
+#define BOARD_INITDEBUG_UARTPINS_ARD_D18_GPIO GPIO4               /*!<@brief GPIO peripheral base pointer */
+#define BOARD_INITDEBUG_UARTPINS_ARD_D18_GPIO_PIN 0U              /*!<@brief GPIO pin number */
+#define BOARD_INITDEBUG_UARTPINS_ARD_D18_GPIO_PIN_MASK (1U << 0U) /*!<@brief GPIO pin mask */
+
+/* Symbols to be used with PORT driver */
+#define BOARD_INITDEBUG_UARTPINS_ARD_D18_PORT PORT4               /*!<@brief PORT peripheral base pointer */
+#define BOARD_INITDEBUG_UARTPINS_ARD_D18_PIN 0U                   /*!<@brief PORT pin number */
+#define BOARD_INITDEBUG_UARTPINS_ARD_D18_PIN_MASK (1U << 0U)      /*!<@brief PORT pin mask */
+                                                                  /* @} */
+
+/*! @name PORT4_1 (coord P2), ARD_D19
+  @{ */
+
+/* Symbols to be used with GPIO driver */
+#define BOARD_INITDEBUG_UARTPINS_ARD_D19_GPIO GPIO4               /*!<@brief GPIO peripheral base pointer */
+#define BOARD_INITDEBUG_UARTPINS_ARD_D19_GPIO_PIN 1U              /*!<@brief GPIO pin number */
+#define BOARD_INITDEBUG_UARTPINS_ARD_D19_GPIO_PIN_MASK (1U << 1U) /*!<@brief GPIO pin mask */
+
+/* Symbols to be used with PORT driver */
+#define BOARD_INITDEBUG_UARTPINS_ARD_D19_PORT PORT4               /*!<@brief PORT peripheral base pointer */
+#define BOARD_INITDEBUG_UARTPINS_ARD_D19_PIN 1U                   /*!<@brief PORT pin number */
+#define BOARD_INITDEBUG_UARTPINS_ARD_D19_PIN_MASK (1U << 1U)      /*!<@brief PORT pin mask */
+                                                                  /* @} */
 
 /*!
  * @brief Configures pin routing and optionally pin electrical features.

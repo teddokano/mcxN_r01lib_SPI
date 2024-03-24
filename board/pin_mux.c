@@ -341,12 +341,12 @@ BOARD_InitDEBUG_UARTPins:
   - {pin_num: F6, peripheral: I3C1, signal: SDA, pin_signal: PIO1_16/WUU0_IN14/FC5_P0/FC3_P4/CT_INP12/SCT0_OUT6/FLEXIO0_D24/PLU_OUT4/ENET0_RXD2/I3C1_SDA/ADC1_A16}
   - {pin_num: F4, peripheral: I3C1, signal: SCL, pin_signal: PIO1_17/FC5_P1/FC3_P5/CT_INP13/SCT0_OUT7/FLEXIO0_D25/PLU_OUT5/ENET0_RXD3/I3C1_SCL/ADC1_A17}
   - {pin_num: C14, peripheral: GPIO0, signal: 'GPIO, 6', pin_signal: PIO0_6/ISPMODE_N/FC0_P2/FC1_P6/CT_INP2/HSCMP2_OUT/PDM0_DATA1/CLKOUT/TSI0_CH10}
+  - {pin_num: P1, peripheral: GPIO4, signal: 'GPIO, 0', pin_signal: PIO4_0/WUU0_IN18/TRIG_IN6/FC2_P0/CT_INP16/PLU_IN0/SINC0_MCLK3}
+  - {pin_num: P2, peripheral: GPIO4, signal: 'GPIO, 1', pin_signal: PIO4_1/TRIG_IN7/FC2_P1/CT_INP17/PLU_IN1}
   - {pin_num: E10, peripheral: GPIO0, signal: 'GPIO, 27', pin_signal: PIO0_27/FC1_P3/CT0_MAT3/ADC0_B19}
   - {pin_num: B6, peripheral: GPIO0, signal: 'GPIO, 24', pin_signal: PIO0_24/FC1_P0/CT0_MAT0/ADC0_B16}
   - {pin_num: F10, peripheral: GPIO0, signal: 'GPIO, 26', pin_signal: PIO0_26/FC1_P2/CT0_MAT2/ADC0_B18}
   - {pin_num: A6, peripheral: GPIO0, signal: 'GPIO, 25', pin_signal: PIO0_25/FC1_P1/CT0_MAT1/ADC0_B17}
-  - {pin_num: P1, peripheral: GPIO4, signal: 'GPIO, 0', pin_signal: PIO4_0/WUU0_IN18/TRIG_IN6/FC2_P0/CT_INP16/PLU_IN0/SINC0_MCLK3}
-  - {pin_num: P2, peripheral: GPIO4, signal: 'GPIO, 1', pin_signal: PIO4_1/TRIG_IN7/FC2_P1/CT_INP17/PLU_IN1}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 /* clang-format on */
